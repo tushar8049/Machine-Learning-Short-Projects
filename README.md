@@ -12,7 +12,6 @@
 
 **Code:**
 
-The code is included in the zip file that is attached along with the word document.
 In order to change the running algorithm user need to enter the value as per the menu list provided on the console at runtime. Here is the list:
 1. DecisionTree
 2. NeuralNet
