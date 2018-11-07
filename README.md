@@ -1,5 +1,39 @@
 # Machine-Learning-Short-Projects
 
+## Neural Network
+
+**Dataset:**
+- **_Name:_** Iris Dataset
+- **_Source:_** https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+- **_Number of Class Labels:_** 3 [Iris Setosa] [Iris Versicolour] [Iris Virginica]
+- **_Number of Attributes:_** 4
+- **_Class Distribution: 33.3% for each of 3 classes._**
+- **_All attributes are continuous._**
+- **_None Missing Attribute Values._**
+
+**Code:**
+
+For calculating the test accuracy we have predicted the class labels and checked with the target class label to see if that matches. The total matches are divide by the total test data to find the accuracy of the training model. Also, the results shown above are on the scale of 0 to 1 where 1 signifies the highest value. 
+
+Methods like LabelEncoder and OneHotEncoder are used to convert categorical data into float values so that the neural network can be trained. Moreover, as per the requirement, section of code has been included to handle missing values.
+
+
+**Output:**
+
+|Activation Function|Test Size|Average Error on Training Data|Average Error on Test Data|Accuracy on Test Data|
+|---|---|---|---|---|
+|Sigmoid Function|25%|0.0372|0.0399|0.9210|
+|Sigmoid Function|30%|0.0376|0.0399|0.9333|
+|tanh Function|25%|0.3332|0.3508|0.6315|
+|tanh Function|30%|0.1743|0.2691|0.8444|
+|ReLu Function|25%|0.1666|0.1666|0.3421|
+|ReLu Function|30%|0.1666|0.1666|0.3556|
+
+**Results:**
+
+For this Iris dataset as we can observe sigmoid function performs better than tanh and ReLu. Depending upon network whether it is deeper or shallow, the accuracy of activation function might differ. For example, ReLu is only good for deeper network and hence the accuracy of the test data is less compared to other two in our network. Tanh activation performs better for shallow network compared ReLu and hence its accuracy is better than ReLu but not better than sigmoid activation functions.
+
+
 ## Hyper Parameter Tuning
 
 **Dataset:**
